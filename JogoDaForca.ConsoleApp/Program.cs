@@ -99,7 +99,7 @@ class Program
       Console.WriteLine($"Palavras acertadas: {(string.Join("", correctWords))}");
       Console.WriteLine($"Erros cometidos: {errorCount}");
 
-      Console.Write("Digite uma letra: ");
+      Console.Write("\nDigite uma letra: ");
       string? strLetter = Console.ReadLine();
 
       if (string.IsNullOrWhiteSpace(strLetter))
