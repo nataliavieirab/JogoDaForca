@@ -22,6 +22,7 @@ class Program
     }
 
   }
+
   static void ShowHeader()
   {
     Console.Clear();
@@ -29,6 +30,7 @@ class Program
     Console.WriteLine("Jogo da Forca");
     Console.WriteLine("---------------------------------");
   }
+
   static string RandomWordGenerator()
   {
     string[] words = [
@@ -70,6 +72,7 @@ class Program
 
     return randomWord;
   }
+
   static char[] UpdateCorrectWords(string randomWord)
   {
     char[] correctWords = new char[randomWord.Length];
@@ -81,6 +84,7 @@ class Program
 
     return correctWords;
   }
+
   static void RunGame(string randomWord, char[] correctWords)
   {
     bool playerWin = false;
@@ -141,6 +145,7 @@ class Program
       Console.ReadLine();
     }
   }
+
   static void DrawHangman(int errorCount)
   {
     Console.Clear();
@@ -222,6 +227,7 @@ class Program
 
     Console.WriteLine("---------------------------------");
   }
+
   static bool ShouldContinue()
   {
     Console.Write("Deseja continuar o jogo? (s/N): ");
